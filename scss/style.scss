@@ -4,55 +4,69 @@
 @import "./introducao";
 @import "./produtos";
 @import "./preco";
+@import "./qualidade";
 
-.qualidade {
+
+.newsletter {
+  background: var(--color-background-card);
+  padding: 60px calc((100% - 960px)/2);
   display: flex;
-  max-width: 960px;
-  margin: 60px auto;
   flex-wrap: wrap;
 
-  .qualidade-item {
-    flex: 1 1 300px;
-    margin: 20px 10px;
+  .newsletter-info {
+    flex: 1 1 200px;
+    margin: 0 10px;
 
-    h2 {
-      font-size: 2.25rem;
-      color: var(--color-body-text);
-      margin-bottom: 20px;
-
-      &:before {
-        content: '';
-        display: inline-block;
-        width: 8px;
-        height: 30px;
-        margin-right: 10px;
-      }
-
-
-    }
-
-    &:nth-of-type(3n + 1) {
-      h2:before {
-        background: var(--color-purple);
-      }
-    }
-
-    &:nth-of-type(3n + 2) {
-      h2:before {
-        background: var(--color-red);
-      }
-    }
-
-    &:nth-of-type(3n + 3) {
-      h2:before {
-        background: var(--color-cyan);
-      }
+    h1 {
+      font-size: 3rem;
+      color: var(--color-card-title-text);
     }
 
     p {
       font-size: 1.25rem;
-      line-height: 1.4;
+      font-style: italic;
+      max-width: 230px;
       color: var(--color-body-text);
+    }
+  }
+
+  .newsletter-form {
+    flex: 2 1 260px;
+    margin: 0 10px;
+    align-self: center;
+    flex-wrap: wrap;
+    display: flex;
+
+    input {
+      flex: 3 1 200px;
+      font-size: 1.25rem;
+      color: var(--color-body-text);
+      font-style: italic;
+      font-family: "Nunito", Helvetica, Arial, sans-serif;
+      border: solid 4px var(--color-blue-2);
+      background: transparent;
+      padding: 15px 10px;
+      border-radius: 0px;
+      margin: 0px;
+      font-weight: bold;
+    }
+
+    button {
+      flex: 1 1 260px;
+      font-family: "Nunito", Helvetica, Arial, sans-serif;
+      font-size: 2.25rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: var(--color-blue-2);
+      color: var(--color-white);
+      cursor: pointer;
+      margin: 0px;
+      border: 0px;
+      padding: 15px 10px;
+
+      @media (max-width: 600px) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
