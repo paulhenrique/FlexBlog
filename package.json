@@ -1,0 +1,30 @@
+{
+  "name": "flexblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulhenrique/FlexBlog.git"
+  },
+  "keywords": [
+    "flexbox",
+    "origamid",
+    "flex",
+    "html",
+    "css",
+    "scss"
+  ],
+  "author": "paulhenrique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulhenrique/FlexBlog/issues"
+  },
+  "homepage": "https://github.com/paulhenrique/FlexBlog#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
