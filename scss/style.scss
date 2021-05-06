@@ -1,25 +1,42 @@
 @import "./global";
+@import "./superinfo";
 
 
-.superInfo-bg {
-  background: var(--color-blue);
-  color: var(--color-white);
-  display: flex;
-  justify-content: center;
+.menu-bg {
+  background: var(--color-blue-2);
 
-  .superinfo {
+  .menu {
+    width: 80%;
     max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
-    flex: 1;
     flex-wrap: wrap;
-    padding-top: 10px;
 
-
-    a,
-    p {
+    a {
       color: var(--color-white);
-      margin: 0 10px 10px 10px;
+      font-size: 1.25rem;
+      font-weight: 400;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+
+    .menu-logo {
+      a {
+        font-size: 2.25rem;
+        font-weight: 700;
+      }
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        margin: 15px;
+      }
     }
   }
 }

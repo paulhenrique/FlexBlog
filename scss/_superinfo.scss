@@ -1,0 +1,22 @@
+.superInfo-bg {
+  background: var(--color-blue);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+
+  .superinfo {
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
+    padding-top: 10px;
+
+
+    a,
+    p {
+      color: var(--color-white);
+      margin: 0 10px 10px 10px;
+    }
+  }
+}
