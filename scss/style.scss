@@ -1,45 +1,56 @@
 @import "./global";
 @import "./superinfo";
 @import "./menu";
+@import "./introducao";
 
-.introducao {
+
+.produtos {
   max-width: 960px;
-  margin: 0 auto;
-  font-size: 3rem;
-  line-height: 3rem;
-  padding: 60px 0;
-  border-bottom: solid var(--color-blue-2) 2px;
-}
+  margin: 60px auto;
 
-
-.sobre {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 60px 0;
-
-  display: flex;
-
-  .sobre-info {
-    flex: 2 1 300px;
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: .5rem;
-    }
-
-    p {
-      font-size: 1.25rem;
-      line-height: 1.6rem;
-      margin-bottom: 1rem;
-      color: var(--color-body-text);
-    }
-
-
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 60px;
   }
 
-  .sobre-img {
-    flex: 1 1 160px;
-    margin: 0 10px;
-    ;
+  .produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    .produtos-item {
+      flex: 1 1 175px;
+      margin: .5rem;
+      background: var(--color-background-card);
+      transition: transform .25s, box-shadow .25s;
+
+      @mixin Hover($color) {
+        border-top: solid 8px $color;
+
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 0 0 4px $color;
+        }
+      }
+
+      &.purple {
+        @include Hover(var(--color-purple));
+      }
+
+      &.pink {
+        @include Hover(var(--color-red));
+      }
+
+      &.blue {
+        @include Hover(var(--color-cyan));
+      }
+
+      h2 {
+        font-size: 3rem;
+        color: var(--color-card-title-text);
+        padding: 60px 20px;
+      }
+    }
   }
 }
