@@ -1,42 +1,45 @@
 @import "./global";
 @import "./superinfo";
+@import "./menu";
+
+.introducao {
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding: 60px 0;
+  border-bottom: solid var(--color-blue-2) 2px;
+}
 
 
-.menu-bg {
-  background: var(--color-blue-2);
+.sobre {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
 
-  .menu {
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
 
-    a {
-      color: var(--color-white);
+  .sobre-info {
+    flex: 2 1 300px;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: .5rem;
+    }
+
+    p {
       font-size: 1.25rem;
-      font-weight: 400;
-
-      &:hover {
-        filter: brightness(0.9);
-      }
+      line-height: 1.6rem;
+      margin-bottom: 1rem;
+      color: var(--color-body-text);
     }
 
-    .menu-logo {
-      a {
-        font-size: 2.25rem;
-        font-weight: 700;
-      }
-    }
 
-    ul {
-      display: flex;
+  }
 
-      li {
-        margin: 15px;
-      }
-    }
+  .sobre-img {
+    flex: 1 1 160px;
+    margin: 0 10px;
+    ;
   }
 }

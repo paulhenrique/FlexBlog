@@ -1,0 +1,38 @@
+.menu-bg {
+  background: var(--color-blue-2);
+
+  .menu {
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a {
+      color: var(--color-white);
+      font-size: 1.25rem;
+      font-weight: 400;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+
+    .menu-logo {
+      a {
+        font-size: 2.25rem;
+        font-weight: 700;
+      }
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        margin: 15px;
+      }
+    }
+  }
+}
